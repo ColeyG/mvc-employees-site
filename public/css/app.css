@@ -348,7 +348,24 @@ template {
 [hidden] {
   display: none;
 }
+.sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+h1 {
+  color: #16161d;
+  font-size: 12pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  margin: 0;
+}
+
 body {
-  background-color: blue;
+  background-color: #f3e9d2;
 }
 

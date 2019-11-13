@@ -1,5 +1,33 @@
 // Importing Normalize from NPM
 @import "../../node_modules/normalize.css/normalize.css";
+@import "./cold-lib.scss";
+
+@mixin cabin($color: $black, $size: 12pt, $weight: normal) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: "Cabin", sans-serif;
+}
+
+@mixin old-standard($color: $black, $size: 12pt, $weight: normal) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  font-family: "Old Standard TT", serif;
+}
+
+$midnight-green: #114b5f;
+$emerald: #1a936f;
+$teal: #88d498;
+$grayeen: #c6dabf;
+$eggsheel: #f3e9d2;
+$black: #16161d;
+
+h1 {
+  @include cabin();
+  margin: 0;
+}
+
 body {
-  background-color: blue;
+  background-color: $eggsheel;
 }

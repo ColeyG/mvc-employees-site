@@ -1,0 +1,20 @@
+$default-map: (
+  "xsmall": 320px,
+  "small": 500px,
+  "medium": 700px,
+  "large": 1000px,
+  "xlarge": 1200px
+);
+
+@function break($value, $map: $default-map) {
+  @return map-get($map: $map, $key: $value);
+}
+
+.sr-only {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
