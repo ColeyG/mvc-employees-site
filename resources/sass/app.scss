@@ -1,2 +1,5 @@
-//
-@import "reset.css";
+// Importing Normalize from NPM
+@import "../../node_modules/normalize.css/normalize.css";
+body {
+  background-color: blue;
+}
