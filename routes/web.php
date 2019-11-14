@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', 'EmployeesController@index');
+Route::get('/', 'EmployeesController@index')->name('home');
+
+Route::get('/about', 'EmployeesController@about')->name('about');
 
 Route::delete('employees/{employee}', 'EmployeesController@destroy');

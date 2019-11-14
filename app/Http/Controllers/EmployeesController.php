@@ -10,6 +10,10 @@ class EmployeesController extends Controller
     return view('employees');
    }
 
+   public function about () {
+     return view('about');
+   }
+
    public function destroy (\App\Employee $employee) {
     $employee->delete();
 
