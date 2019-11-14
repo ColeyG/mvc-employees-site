@@ -20,7 +20,7 @@ $midnight-green: #114b5f;
 $emerald: #1a936f;
 $teal: #88d498;
 $grayeen: #c6dabf;
-$eggsheel: #f3e9d2;
+$eggshell: #f3e9d2;
 $black: #16161d;
 
 h1 {
@@ -29,7 +29,7 @@ h1 {
 }
 
 body {
-  background-color: $eggsheel;
+  background-color: white;
 }
 
 .primary-header {
@@ -82,5 +82,37 @@ body {
     &:hover {
       border-bottom: 3px solid $teal;
     }
+  }
+}
+.employee-cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.employee-card {
+  width: 300px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba($black, 0.1);
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  h3,
+  p {
+    @include cabin($color: $black, $size: 16pt);
+    text-align: right;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  .image {
+    img {
+      border-radius: 50%;
+    }
+    margin: 10px;
   }
 }

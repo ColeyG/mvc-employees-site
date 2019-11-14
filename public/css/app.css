@@ -366,7 +366,7 @@ h1 {
 }
 
 body {
-  background-color: #f3e9d2;
+  background-color: white;
 }
 
 .primary-header {
@@ -455,5 +455,54 @@ body {
 
 .primary-navigation ul li a:hover {
   border-bottom: 3px solid #88d498;
+}
+
+.employee-cards {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.employee-card {
+  width: 300px;
+  background-color: white;
+  box-shadow: 1px 1px 5px rgba(22, 22, 29, 0.1);
+  padding: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.employee-card h3,
+.employee-card p {
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  text-align: right;
+}
+
+.employee-card h3 {
+  font-weight: bold;
+}
+
+.employee-card .image {
+  margin: 10px;
+}
+
+.employee-card .image img {
+  border-radius: 50%;
 }
 
