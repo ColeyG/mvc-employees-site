@@ -358,8 +358,8 @@ template {
 }
 
 h1 {
-  color: #16161d;
-  font-size: 12pt;
+  color: white;
+  font-size: 36pt;
   font-weight: normal;
   font-family: "Cabin", sans-serif;
   margin: 0;
@@ -367,5 +367,83 @@ h1 {
 
 body {
   background-color: #f3e9d2;
+}
+
+.primary-header {
+  width: 100%;
+  padding: 50px;
+  background: linear-gradient(45deg, #0d3a49, #092934);
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.primary-navigation {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  width: 100%;
+}
+
+.primary-navigation .search button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Old Standard TT", serif;
+  margin: 5px;
+  border-bottom: 1px solid #88d498;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.primary-navigation .search button:hover {
+  border-bottom: 3px solid #88d498;
+  margin-bottom: 3px;
+}
+
+.primary-navigation ul {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  list-style: none;
+}
+
+.primary-navigation ul li a {
+  color: white;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Old Standard TT", serif;
+  text-decoration: none;
+  margin: 5px;
+  border-bottom: 1px solid #88d498;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.primary-navigation ul li a:hover {
+  border-bottom: 3px solid #88d498;
 }
 

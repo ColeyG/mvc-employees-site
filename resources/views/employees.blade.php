@@ -1,3 +1,5 @@
 @extends('layouts.general')
-
-<h1>Employees</h1>
+@section('content')
+  @component('components.header')
+  @endcomponent
+@endsection
