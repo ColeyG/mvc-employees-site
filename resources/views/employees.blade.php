@@ -6,6 +6,10 @@
     @if(App\Employee::all()->isNotEmpty())
       @foreach(App\Employee::all() as $employee)
         <div class="employee-card">
+          <div class="actions">
+            <button>Some</button>
+            <button>Delete</button>
+          </div>
           <div class="text">
             <h3>{{ $employee->name }}</h3>
             <p>{{ $employee->role }}</p>
