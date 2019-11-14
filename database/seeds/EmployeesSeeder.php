@@ -5,8 +5,8 @@ use Illuminate\Database\Seeder;
 class EmployeesSeeder extends Seeder
 {
     private $employeeEntries = [
-      ['name' => 'Carl Evans', 'role' => 'VP of Sales'],
-      ['name' => 'Christine Archduke', 'role' => 'VP of Public Relations'],
+      ['name' => 'Alex Evans', 'role' => 'VP of Sales'],
+      ['name' => 'Chris Archduke', 'role' => 'VP of Public Relations'],
       ['name' => 'Rhi Bagdoor', 'role' => 'Public Relations Manager']
     ];
     /**
