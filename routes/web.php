@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'EmployeesController@index');
+
+Route::delete('employees/{employee}', 'EmployeesController@destroy');

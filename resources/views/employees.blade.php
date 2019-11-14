@@ -7,8 +7,14 @@
       @foreach(App\Employee::all() as $employee)
         <div class="employee-card">
           <div class="actions">
-            <button>Some</button>
-            <button>Delete</button>
+            <form action="">
+              <button>More</button>
+            </form>
+            <form action="/employees/{{ $employee->id }}" method="POST">
+            @method('DELETE')
+            @csrf
+              <button type="submit">Delete</button>
+            </form>
           </div>
           <div class="text">
             <h3>{{ $employee->name }}</h3>
