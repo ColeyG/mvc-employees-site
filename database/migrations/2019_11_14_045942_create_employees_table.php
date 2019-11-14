@@ -18,6 +18,8 @@ class CreateEmployeesTable extends Migration
             $table->string('name');
             $table->string('role');
             $table->string('code');
+            $table->string('imageNumber');
+            $table->string('gender');
             $table->timestamps();
         });
     }

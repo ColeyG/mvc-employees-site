@@ -9,6 +9,8 @@ class Employee extends Model
     protected $fillable = [
       'name',
       'role',
-      'code'
+      'code',
+      'imageNumber',
+      'gender'
     ];
 }

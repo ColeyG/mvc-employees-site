@@ -16,7 +16,7 @@
             <p>Code: {{ $employee->code }}</p>
           </div>
           <div class="image">
-            <img src="https://randomuser.me/api/portraits/men/0.jpg" alt="User Image">
+            <img src="https://randomuser.me/api/portraits/{{ $employee->gender }}/{{ $employee->imageNumber }}.jpg" alt="Image of {{ $employee->name }}">
           </div>
         </div>
       @endforeach
