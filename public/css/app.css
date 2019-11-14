@@ -460,16 +460,18 @@ body {
 .employee-cards {
   display: -webkit-box;
   display: flex;
-  -webkit-box-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
           align-items: center;
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .employee-card {
+  margin: 5px;
   background-color: white;
   box-shadow: 1px 1px 5px rgba(22, 22, 29, 0.1);
   padding: 10px;

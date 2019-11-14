@@ -86,13 +86,15 @@ body {
 }
 .employee-cards {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 15px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .employee-card {
+  margin: 5px;
   background-color: white;
   box-shadow: 1px 1px 5px rgba($black, 0.1);
   padding: 10px;
