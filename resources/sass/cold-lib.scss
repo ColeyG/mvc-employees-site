@@ -17,6 +17,10 @@ $default-map: (
   margin: 0;
 }
 
+@mixin input-normalize() {
+  border: none;
+}
+
 .sr-only {
   position: absolute !important;
   height: 1px;

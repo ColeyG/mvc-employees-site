@@ -409,13 +409,22 @@ body {
   font-family: "Old Standard TT", serif;
   margin: 5px;
   border-bottom: 1px solid #88d498;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: border-bottom margin 0.2s;
+  transition: border-bottom margin 0.2s;
 }
 
 .primary-navigation .search button:hover {
   border-bottom: 3px solid #88d498;
   margin-bottom: 3px;
+}
+
+.primary-navigation .search input {
+  border: none;
+  color: #16161d;
+  font-size: 12pt;
+  font-weight: normal;
+  font-family: "Old Standard TT", serif;
+  padding: 2px;
 }
 
 .primary-navigation ul {
@@ -439,8 +448,8 @@ body {
   text-decoration: none;
   margin: 5px;
   border-bottom: 1px solid #88d498;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: border-bottom 0.2s;
+  transition: border-bottom 0.2s;
 }
 
 .primary-navigation ul li a:hover {

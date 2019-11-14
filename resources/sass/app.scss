@@ -54,11 +54,16 @@ body {
       @include old-standard($color: white, $size: 16pt);
       margin: 5px;
       border-bottom: 1px solid $teal;
-      transition: 0.2s;
+      transition: border-bottom margin 0.2s;
       &:hover {
         border-bottom: 3px solid $teal;
         margin-bottom: 3px;
       }
+    }
+    input {
+      @include input-normalize();
+      @include old-standard($color: $black, $size: 12pt);
+      padding: 2px;
     }
   }
 }
@@ -73,7 +78,7 @@ body {
     text-decoration: none;
     margin: 5px;
     border-bottom: 1px solid $teal;
-    transition: 0.2s;
+    transition: border-bottom 0.2s;
     &:hover {
       border-bottom: 3px solid $teal;
     }
