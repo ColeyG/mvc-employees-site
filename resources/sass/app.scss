@@ -22,6 +22,7 @@ $teal: #88d498;
 $grayeen: #c6dabf;
 $eggshell: #f3e9d2;
 $black: #16161d;
+$red: #e63946;
 
 h1 {
   @include cabin($color: white, $size: 36pt);
@@ -133,6 +134,9 @@ body {
       margin: 5px;
       background-color: white;
       padding: 5px;
+    }
+    .delete {
+      border: 1px solid $red;
     }
   }
 }

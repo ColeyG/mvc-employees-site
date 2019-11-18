@@ -13,7 +13,7 @@
             <form action="/employees/{{ $employee->id }}" method="POST">
             @method('DELETE')
             @csrf
-              <button type="submit">Delete</button>
+              <button class="delete" type="submit">Delete</button>
             </form>
           </div>
           <div class="text">

@@ -6,13 +6,21 @@ use Illuminate\Http\Request;
 
 class EmployeesController extends Controller
 {
-   public function index () {
-    return view('employees');
-   }
+    public function index () {
+      return view('employees');
+    }
 
-   public function about () {
+    public function about () {
      return view('about');
-   }
+    }
+
+    public function manage () {
+      return view('manage');
+    }
+
+    public function contact () {
+      return view('contact');
+    }
 
    public function destroy (\App\Employee $employee) {
     $employee->delete();

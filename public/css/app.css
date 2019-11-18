@@ -541,3 +541,7 @@ body {
   padding: 5px;
 }
 
+.employee-card .actions .delete {
+  border: 1px solid #e63946;
+}
+
