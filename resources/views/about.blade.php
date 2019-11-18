@@ -2,5 +2,7 @@
 @section('content')
   @component('components.header')
   @endcomponent
-  <h2>About</h2>
+  <section class="about">
+    <h2>About</h2>
+  </section>
 @endsection

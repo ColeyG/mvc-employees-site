@@ -1,0 +1,52 @@
+.primary-header {
+  width: 100%;
+  padding: 50px;
+  background: linear-gradient(45deg, darken($midnight-green, 5%), darken($midnight-green, 10%));
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.primary-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  .search {
+    button {
+      @include button-normalize();
+      @include old-standard($color: white, $size: 16pt);
+      margin: 5px;
+      border-bottom: 1px solid $teal;
+      transition: border-bottom margin 0.2s;
+      &:hover {
+        border-bottom: 3px solid $teal;
+        margin-bottom: 3px;
+      }
+    }
+    input {
+      @include input-normalize();
+      @include old-standard($color: $black, $size: 12pt);
+      padding: 2px;
+    }
+  }
+}
+.primary-navigation ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  list-style: none;
+  li a {
+    @include old-standard($color: white, $size: 16pt);
+    text-decoration: none;
+    margin: 5px;
+    border-bottom: 1px solid $teal;
+    transition: border-bottom 0.2s;
+    &:hover {
+      border-bottom: 3px solid $teal;
+    }
+  }
+}

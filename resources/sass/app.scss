@@ -29,114 +29,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  @include cabin($color: $black, $size: 24pt);
+  margin: 0;
+}
+
 body {
   background-color: white;
 }
 
-.primary-header {
-  width: 100%;
-  padding: 50px;
-  background: linear-gradient(45deg, darken($midnight-green, 5%), darken($midnight-green, 10%));
-  box-sizing: border-box;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-}
-.primary-navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  width: 100%;
-  .search {
-    button {
-      @include button-normalize();
-      @include old-standard($color: white, $size: 16pt);
-      margin: 5px;
-      border-bottom: 1px solid $teal;
-      transition: border-bottom margin 0.2s;
-      &:hover {
-        border-bottom: 3px solid $teal;
-        margin-bottom: 3px;
-      }
-    }
-    input {
-      @include input-normalize();
-      @include old-standard($color: $black, $size: 12pt);
-      padding: 2px;
-    }
-  }
-}
-.primary-navigation ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  list-style: none;
-  li a {
-    @include old-standard($color: white, $size: 16pt);
-    text-decoration: none;
-    margin: 5px;
-    border-bottom: 1px solid $teal;
-    transition: border-bottom 0.2s;
-    &:hover {
-      border-bottom: 3px solid $teal;
-    }
-  }
-}
-.employee-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 15px;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-}
-.employee-card {
-  margin: 5px;
-  background-color: white;
-  box-shadow: 1px 1px 5px rgba($black, 0.1);
-  padding: 10px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  .text {
-    min-width: 150px;
-    padding: 0 20px;
-  }
-  h3,
-  p {
-    @include cabin($color: $black, $size: 16pt);
-    text-align: right;
-  }
-  h3 {
-    font-weight: bold;
-  }
-  .image {
-    img {
-      border-radius: 50%;
-    }
-    margin: 10px;
-  }
-  .actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    button {
-      @include button-normalize();
-      @include cabin($color: $black, $size: 10pt);
-      border: 1px solid $teal;
-      width: 60px;
-      margin: 5px;
-      background-color: white;
-      padding: 5px;
-    }
-    .delete {
-      border: 1px solid $red;
-    }
-  }
-}
+@import "./header.scss";
+@import "./employee.scss";
+@import "./about.scss";
