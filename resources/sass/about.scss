@@ -1,2 +1,28 @@
 .about {
+  padding: 15px;
+  .information {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    p {
+      @include old-standard($color: $black, $size: 16pt);
+      line-height: 19px;
+      text-indent: 30px;
+      margin-right: 10px;
+    }
+    img {
+      max-width: 500px;
+    }
+    @media (max-width: break("large")) {
+      flex-direction: column;
+      p {
+        margin: 0;
+        margin-bottom: 15px;
+      }
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }

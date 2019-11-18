@@ -393,6 +393,14 @@ body {
           flex-direction: row;
 }
 
+@media (max-width: 1000px) {
+  .primary-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
 .primary-navigation {
   display: -webkit-box;
   display: flex;
@@ -436,6 +444,28 @@ body {
   padding: 2px;
 }
 
+@media (max-width: 460px) {
+  .primary-navigation .search {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) {
+  .primary-navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+
 .primary-navigation ul {
   display: -webkit-box;
   display: flex;
@@ -463,6 +493,19 @@ body {
 
 .primary-navigation ul li a:hover {
   border-bottom: 3px solid #88d498;
+}
+
+@media (max-width: 460px) {
+  .primary-navigation ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    padding: 0;
+  }
+
+  .primary-navigation ul li a {
+    text-align: center;
+  }
 }
 
 .employee-cards {
@@ -551,5 +594,52 @@ body {
 
 .employee-card .actions .delete {
   border: 1px solid #e63946;
+}
+
+.about {
+  padding: 15px;
+}
+
+.about .information {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.about .information p {
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Old Standard TT", serif;
+  line-height: 19px;
+  text-indent: 30px;
+  margin-right: 10px;
+}
+
+.about .information img {
+  max-width: 500px;
+}
+
+@media (max-width: 1000px) {
+  .about .information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+
+  .about .information p {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .about .information img {
+    max-width: 100%;
+  }
 }
 

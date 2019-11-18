@@ -7,6 +7,9 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  @media (max-width: break("large")) {
+    flex-direction: column;
+  }
 }
 .primary-navigation {
   display: flex;
@@ -31,6 +34,15 @@
       @include old-standard($color: $black, $size: 12pt);
       padding: 2px;
     }
+    @media (max-width: 460px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  @media (max-width: 860px) {
+    flex-direction: column;
   }
 }
 .primary-navigation ul {
@@ -47,6 +59,13 @@
     transition: border-bottom 0.2s;
     &:hover {
       border-bottom: 3px solid $teal;
+    }
+  }
+  @media (max-width: 460px) {
+    flex-direction: column;
+    padding: 0;
+    li a {
+      text-align: center;
     }
   }
 }
