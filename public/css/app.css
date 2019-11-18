@@ -643,3 +643,37 @@ body {
   }
 }
 
+.manage {
+  padding: 15px;
+}
+
+.manage .employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.manage .employee-table tr {
+  text-align: center;
+}
+
+.manage .employee-table tr:nth-child(even) {
+  background-color: #88d498;
+}
+
+.manage .employee-table tr td {
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+}
+
+.manage .employee-table tr td button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background-color: #1a936f;
+  padding: 5px;
+}
+
