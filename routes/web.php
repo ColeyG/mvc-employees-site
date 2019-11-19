@@ -19,6 +19,6 @@ Route::get('/manage', 'EmployeesController@manage')->name('manage');
 
 Route::get('/contact', 'EmployeesController@contact')->name('contact');
 
-Route::get('/employee', 'EmployeesController@employee');
+Route::get('/employee/{employee}', 'EmployeesController@employee')->name('employee');
 
 Route::delete('employees/{employee}', 'EmployeesController@destroy');

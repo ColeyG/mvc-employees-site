@@ -4,7 +4,7 @@
   @endcomponent
   <h2>Employee</h2>
   <?php
-    $gamer = App\Employee::find(app('request')->input('id'));
+    $employee = App\Employee::find($employee);
   ?>
-  <p>{{ $gamer->name }}</p>
+  <p>{{ $employee->name }}</p>
 @endsection
