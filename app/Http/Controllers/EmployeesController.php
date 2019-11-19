@@ -22,6 +22,10 @@ class EmployeesController extends Controller
       return view('contact');
     }
 
+    public function employee () {
+      return view('employee');
+    }
+
    public function destroy (\App\Employee $employee) {
     $employee->delete();
 

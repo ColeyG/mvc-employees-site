@@ -13,14 +13,18 @@
         <td></td>
         <td></td>
       </tr>
-      <tr>
-        <td>asdf</td>
-        <td>asdf</td>
-        <td>asdf</td>
-        <td><button>More</button></td>
-        <td><button>Edit</button></td>
-        <td><button>Delete</button></td>
-      </tr>
+      @if(App\Employee::all()->isNotEmpty())
+        @foreach(App\Employee::all() as $employee)
+        <tr>
+          <td>{{ $employee->name }}</td>
+          <td>{{ $employee->role }}</td>
+          <td>{{ $employee->code }}</td>
+          <td><a href="/employee?id={{ $employee->id }}"><button>More</button></a></td>
+          <td><button>Edit</button></td>
+          <td><button>Delete</button></td>
+        </tr>
+        @endforeach
+      @endif
     </table>
   </section>
 @endsection

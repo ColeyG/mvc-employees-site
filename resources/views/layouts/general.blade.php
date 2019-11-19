@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Employees MVC Site</title>
   <link href="https://fonts.googleapis.com/css?family=Cabin%7cOld+Standard+TT&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="/css/app.css" />
 </head>
 <body>
 <div class="container">
