@@ -33,6 +33,8 @@ class EmployeesController extends Controller
    }
 
    public function search(Request $request) {
-    return $request->all();
+    $employees = \App\Employee::where('name', 'LIKE', "%{$request->employee}%")->get();
+
+    return view('search')->with('employees', $employees);
    }
 }
