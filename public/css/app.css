@@ -681,3 +681,49 @@ body {
   padding: 15px;
 }
 
+.employee h2 {
+  margin-top: 10px;
+  color: #16161d;
+  font-size: 24pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+}
+
+.employee p {
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+}
+
+.employee .image {
+  margin: 10px;
+}
+
+.employee .image img {
+  border-radius: 50%;
+}
+
+.contact {
+  padding: 15px;
+}
+
+.contact p {
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+}
+
+.contact .form {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+

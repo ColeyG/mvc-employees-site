@@ -22,3 +22,5 @@ Route::get('/contact', 'EmployeesController@contact')->name('contact');
 Route::get('/employee/{employee}', 'EmployeesController@employee')->name('employee');
 
 Route::delete('employees/{employee}', 'EmployeesController@destroy');
+
+Route::post('/contactMessage', 'ContactController@send')->name('contactMessage');

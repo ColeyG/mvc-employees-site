@@ -1,3 +1,16 @@
 .employee {
   padding: 15px;
+  h2 {
+    margin-top: 10px;
+    @include cabin($color: $black, $size: 24pt);
+  }
+  p {
+    @include cabin($color: $black, $size: 16pt);
+  }
+  .image {
+    img {
+      border-radius: 50%;
+    }
+    margin: 10px;
+  }
 }

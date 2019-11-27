@@ -29,6 +29,6 @@ class EmployeesController extends Controller
    public function destroy (\App\Employee $employee) {
     $employee->delete();
 
-    return redirect('/');
+    return redirect()->back();
    }
 }
