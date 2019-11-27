@@ -19,3 +19,5 @@ Route::post('/search', 'EmployeesController@search')->name('search');
 Route::get('/createemployee', 'EmployeesController@create')->name('createemployee');
 
 Route::post('/createemployeeaction', 'EmployeesController@createEmployee')->name('createemployeeaction');
+
+Route::get('/edit/{employee}', 'EmployeesController@edit')->name('edit');

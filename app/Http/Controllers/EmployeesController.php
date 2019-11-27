@@ -62,4 +62,8 @@ class EmployeesController extends Controller
 
     return redirect('/manage');
   }
+
+  public function edit ($employee) {
+    return view('edit')->with('employee', $employee);
+  }
 }

@@ -21,7 +21,7 @@
           <td>{{ $employee->role }}</td>
           <td>{{ $employee->code }}</td>
           <td><a href="/employee/{{ $employee->id }}"><button>More</button></a></td>
-          <td><button>Edit</button></td>
+          <td><a href="/edit/{{ $employee->id }}"><button>Edit</button></a></td>
           <td><form action="/employees/{{ $employee->id }}" method="POST">
             @method('DELETE')
             @csrf
