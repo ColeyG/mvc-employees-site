@@ -1,6 +1,16 @@
 .manage {
   padding: 15px;
   overflow-x: auto;
+  .create {
+    display: block;
+    @include cabin($color: $white, $size: 16pt);
+    margin: 10px 0;
+    padding: 10px;
+    background-color: $red;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+  }
   .employee-table {
     width: 100%;
     border-collapse: collapse;

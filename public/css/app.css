@@ -652,6 +652,20 @@ body {
   overflow-x: auto;
 }
 
+.manage .create {
+  display: block;
+  color: white;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #e63946;
+  width: 200px;
+  text-align: center;
+  text-decoration: none;
+}
+
 .manage .employee-table {
   width: 100%;
   border-collapse: collapse;

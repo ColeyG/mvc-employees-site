@@ -4,6 +4,7 @@
   @endcomponent
   <section class="manage">
     <h2>Manage</h2>
+    <a class="create" href="/createemployee">Create an Employee</a>
     <table class="employee-table">
       <tr>
         <td>Name</td>

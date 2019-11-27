@@ -37,4 +37,8 @@ class EmployeesController extends Controller
 
     return view('search')->with('employees', $employees);
    }
+
+   public function create() {
+     return view('create');
+   }
 }

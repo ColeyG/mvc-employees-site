@@ -15,3 +15,5 @@ Route::delete('employees/{employee}', 'EmployeesController@destroy');
 Route::post('/contactMessage', 'ContactController@send')->name('contactMessage');
 
 Route::post('/search', 'EmployeesController@search')->name('search');
+
+Route::get('/createemployee', 'EmployeesController@create')->name('createemployee');
