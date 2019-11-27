@@ -66,4 +66,16 @@ class EmployeesController extends Controller
   public function edit ($employee) {
     return view('edit')->with('employee', $employee);
   }
+
+  public function editAction (Request $request) {
+    \App\Employee::whereId($request->id)->update([
+      'name' => $request->name,
+      'role' => $request->role,
+      'code' => $request->code,
+      'imageNumber' => $request->image,
+      'gender' => $request->gender
+      ]);
+
+      return redirect('/manage');
+  }
 }

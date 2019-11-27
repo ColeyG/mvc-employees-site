@@ -795,7 +795,8 @@ body {
   font-family: "Cabin", sans-serif;
 }
 
-.create select {
+.create select,
+.edit select {
   border: none;
   margin: 10px 0;
   background-color: #88d498;
