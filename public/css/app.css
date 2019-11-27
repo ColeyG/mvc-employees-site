@@ -795,3 +795,13 @@ body {
   font-family: "Cabin", sans-serif;
 }
 
+.create select {
+  border: none;
+  margin: 10px 0;
+  background-color: #88d498;
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+}
+

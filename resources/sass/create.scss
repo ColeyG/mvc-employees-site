@@ -1,0 +1,8 @@
+.create {
+  select {
+    border: none;
+    margin: 10px 0;
+    background-color: $teal;
+    @include cabin($color: $black, $size: 16pt);
+  }
+}

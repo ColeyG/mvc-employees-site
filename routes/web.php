@@ -17,3 +17,5 @@ Route::post('/contactMessage', 'ContactController@send')->name('contactMessage')
 Route::post('/search', 'EmployeesController@search')->name('search');
 
 Route::get('/createemployee', 'EmployeesController@create')->name('createemployee');
+
+Route::post('/createemployeeaction', 'EmployeesController@createEmployee')->name('createemployeeaction');

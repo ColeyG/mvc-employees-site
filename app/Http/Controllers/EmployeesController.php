@@ -41,4 +41,25 @@ class EmployeesController extends Controller
    public function create() {
      return view('create');
    }
+
+   public function createEmployee(Request $request) {
+    $validatedData = $request->validate([
+      'name' => 'required',
+      'role' => 'required',
+      'code' => 'required',
+      'image' => 'required'
+    ]);
+
+    $newEmployee = new \App\Employee;
+
+    $newEmployee->name = $request->name;
+    $newEmployee->role = $request->role;
+    $newEmployee->code = $request->code;
+    $newEmployee->imageNumber = $request->image;
+    $newEmployee->gender = $request->gender;
+
+    $newEmployee->save();
+
+    return redirect('/manage');
+  }
 }
