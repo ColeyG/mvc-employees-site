@@ -2,6 +2,11 @@
 @section('content')
   @component('components.header')
   @endcomponent
+  @if (session('alert'))
+    <div class="alert">
+        <p>{{ session('alert') }}</p>
+    </div>
+  @endif
   <section class="employee-cards">
     @if(App\Employee::all()->isNotEmpty())
       @foreach(App\Employee::all() as $employee)

@@ -39,6 +39,12 @@ body {
   background-color: white;
 }
 
+.alert {
+  @include old-standard($color: $white, $size: 16pt);
+  background-color: $emerald;
+  padding: 5px;
+}
+
 @import "./header.scss";
 @import "./employees.scss";
 @import "./about.scss";

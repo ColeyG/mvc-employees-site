@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+/**
+ * Contact Controller to Submit the Contact Form
+ */
 class ContactController extends Controller
 {
   /**
@@ -18,6 +21,6 @@ class ContactController extends Controller
       'email' => 'required',
       'message' => 'required'
   ]);
-    return $request->all();
+    return redirect('/')->with('alert', 'Sent Message! You\'ll hear from us soon! (Not Really)');
   }
 }
