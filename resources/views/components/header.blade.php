@@ -8,8 +8,11 @@
       <li><a href="{{ URL::route('contact') }}">Contact</a></li>
     </ul>
     <div class="search">
-      <input type="text">
-      <button>Search</button>
+      <form action="/search" method="POST">
+        @csrf
+        <input type="text" name="employee">
+        <button type="submit">Search</button>
+      </form>
     </div>
   </nav>
 </header>

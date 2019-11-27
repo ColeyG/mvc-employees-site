@@ -31,4 +31,8 @@ class EmployeesController extends Controller
 
     return redirect()->back();
    }
+
+   public function search(Request $request) {
+    return $request->all();
+   }
 }
