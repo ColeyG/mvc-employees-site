@@ -575,7 +575,9 @@ body {
           flex-direction: column;
 }
 
-.employee-card .actions button {
+.employee-card .actions button,
+.employee-card .actions a {
+  display: block;
   border: none;
   background-color: rgba(0, 0, 0, 0);
   padding: 0;
@@ -590,6 +592,8 @@ body {
   margin: 5px;
   background-color: white;
   padding: 5px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .employee-card .actions .delete {

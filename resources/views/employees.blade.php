@@ -8,7 +8,7 @@
         <div class="employee-card">
           <div class="actions">
             <form action="">
-              <button>More</button>
+              <a href="/employee/{{ $employee->id }}">More</a>
             </form>
             <form action="/employees/{{ $employee->id }}" method="POST">
             @method('DELETE')

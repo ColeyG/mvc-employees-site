@@ -39,7 +39,9 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    button {
+    button,
+    a {
+      display: block;
       @include button-normalize();
       @include cabin($color: $black, $size: 10pt);
       border: 1px solid $teal;
@@ -47,6 +49,8 @@
       margin: 5px;
       background-color: white;
       padding: 5px;
+      text-align: center;
+      text-decoration: none;
     }
     .delete {
       border: 1px solid $red;
