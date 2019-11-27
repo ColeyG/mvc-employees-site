@@ -727,6 +727,13 @@ body {
           flex-direction: column;
 }
 
+.contact .form label {
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+}
+
 .contact .form input,
 .contact .form textarea {
   border: none;
@@ -751,5 +758,20 @@ body {
   font-family: "Cabin", sans-serif;
   padding: 5px;
   background-color: #114b5f;
+}
+
+.contact .required {
+  color: #e63946;
+}
+
+.contact .error-list {
+  list-style-type: none;
+}
+
+.contact .error {
+  color: #e63946;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
 }
 
