@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-  public function send() {
-    return 'asdf';
+  public function send(Request $request) {
+    return $request->all();
   }
 }

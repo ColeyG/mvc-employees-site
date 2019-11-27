@@ -23,6 +23,7 @@ $grayeen: #c6dabf;
 $eggshell: #f3e9d2;
 $black: #16161d;
 $red: #e63946;
+$white: white;
 
 h1 {
   @include cabin($color: white, $size: 36pt);

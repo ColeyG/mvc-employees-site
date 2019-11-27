@@ -7,9 +7,9 @@
     <p>Feel free to reach out with any feedback or questions!</p>
     <form class="form" action="/contactMessage" method="POST">
       @csrf
-      <input type="text">
-      <input type="text">
-      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <input name="name" type="text" placeholder="Name">
+      <input name="email" type="text" placeholder="Email">
+      <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
       <button type="submit">Submit</button>
     </form>
   </section>

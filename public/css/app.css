@@ -727,3 +727,29 @@ body {
           flex-direction: column;
 }
 
+.contact .form input,
+.contact .form textarea {
+  border: none;
+  background-color: #88d498;
+  color: #16161d;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  padding: 3px;
+  margin: 10px 0;
+}
+
+.contact .form button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 16pt;
+  font-weight: normal;
+  font-family: "Cabin", sans-serif;
+  padding: 5px;
+  background-color: #114b5f;
+}
+

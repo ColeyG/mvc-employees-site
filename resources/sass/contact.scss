@@ -8,5 +8,19 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    input,
+    textarea {
+      border: none;
+      background-color: $teal;
+      @include cabin($color: $black, $size: 16pt);
+      padding: 3px;
+      margin: 10px 0;
+    }
+    button {
+      @include button-normalize();
+      @include cabin($color: $white, $size: 16pt);
+      padding: 5px;
+      background-color: $midnight-green;
+    }
   }
 }
