@@ -1,5 +1,6 @@
 .contact {
-  padding: 15px;
+  padding: 15px 100px;
+  overflow-x: auto;
   p {
     @include cabin($color: $black, $size: 16pt);
   }
